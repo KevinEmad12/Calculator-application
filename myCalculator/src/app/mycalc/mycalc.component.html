@@ -1,0 +1,63 @@
+<html>
+<head> 
+    <title> Calculator </title>
+</head>
+
+    <body>
+        <div class="container">
+        <div class="content">
+            
+            <h1 class="text-center">Angular Calculator</h1>
+            <div class="display">
+
+                    <input type="text" class="border">{{input}}
+
+                    <input type="text" class="border">{{result}}
+            </div>
+            <div class="buttons">
+                <div class="operator row">
+                    <div class="col-auto">
+                    <button class="btn" type="button" (click)="pressOperator('+')" > + </button>
+                    <button class="btn" type="button" (click)="pressOperator('-')" > - </button>
+                    <button class="btn" type="button" (click)="pressOperator('*')" > * </button>
+                    <button class="btn" type="button" (click)="pressOperator('/')" > / </button>
+                    <button class="btn" type="button" (click)="pressOperator('%')" > % </button>
+                </div>
+                </div>
+                <div class="operands row">
+                    <div class="col-auto">
+                        <button class="btn" type="button" (click)="pressNum('1')" > 1 </button>
+                        <button class="btn" type="button" (click)="pressNum('2')" > 2 </button>
+                        <button class="btn" type="button" (click)="pressNum('3')" > 3 </button>
+                        <button (click)="allClear()" class="btn"> A/C </button>
+                        <button (click)="clear()" class="btn "> D </button>
+                    </div>
+                </div>
+
+                <div class="operands row">
+                    <div class="col-auto">
+                        <button class="btn" type="button" (click)="pressNum('4')" > 4 </button>
+                        <button class="btn" type="button" (click)="pressNum('5')" > 5 </button>
+                        <button class="btn" type="button" (click)="pressNum('6')" > 6 </button>
+                        <button class="btn" type="button" (click)="pressNum('0')" > 0 </button>
+                        <button (click)="getAnswer()" class="btn"> = </button>
+                        
+                    </div>
+                </div>
+
+                <div class="operands row">
+                    <div class="col-auto">
+                        <button class="btn" type="button" (click)="pressNum('7')" > 7 </button>
+                        <button class="btn" type="button" (click)="pressNum('8')" > 8 </button>
+                        <button class="btn" type="button" (click)="pressNum('9')" > 9 </button>
+                        <button class="btn" type="button" (click)="pressNum('.')" > . </button>
+                        <img src="../../assets/calc.png" alt="">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>
